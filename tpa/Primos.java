@@ -1,19 +1,19 @@
 package lista;
+
 import java.util.Scanner;
 
 public class Primos {
     public static void main(String[] args) {
-        
-        Scanner in = new Scanner(System.in);
 
+        Scanner in = new Scanner(System.in);
         final int TAM = 10;
-        int A[];
-        int i, j, cont;
+
+        int A[], i, j, cont;
 
         A = new int[TAM];
 
         for(i = 0; i < TAM; i++) {
-            System.out.println("Digite o " + (i+1) + "º valor do vetor A:");
+            System.out.println("Digite o " + (i+1) + " valor do vetor A:");
             A[i] = in.nextInt();
         }
 

@@ -1,34 +1,31 @@
 package lista;
+
 import java.util.Scanner;
 
-public class VetorParImpar {
-
+public class ParImpar {
     public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
-
+        Scanner in = new Scanner(System.in); 
         final int TAM = 20;
-        int A[], B[];
-        int i, j;
-        int qtdPares = 0;
+
+        int A[], B[], i, j, qtdPares;
 
         A = new int[TAM];
         B = new int[TAM];
 
-       
+        qtdPares = 0;
+
         for(i = 0; i < TAM; i++) {
-            System.out.println("Digite o " + (i+1) + "º valor do vetor A:");
+            System.out.println("Digite o " + (i+1) + " valor do vetor A:");
             A[i] = in.nextInt();
         }
 
-        
         for(i = 0; i < TAM; i++) {
             if(A[i] % 2 == 0) {
                 qtdPares++;
             }
         }
 
-        
         j = 0;
         for(i = 0; i < TAM; i++) {
             if(A[i] % 2 == 0) {
@@ -37,7 +34,6 @@ public class VetorParImpar {
             }
         }
 
-        
         j = qtdPares;
         for(i = 0; i < TAM; i++) {
             if(A[i] % 2 != 0) {
@@ -46,8 +42,7 @@ public class VetorParImpar {
             }
         }
 
-        
-        System.out.print("\nVetor B = ");
+        System.out.print("\nB = ");
         for(i = 0; i < TAM; i++) {
             System.out.print(B[i] + " ");
         }

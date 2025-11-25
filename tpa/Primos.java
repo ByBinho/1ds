@@ -1,5 +1,4 @@
 package lista;
-
 import java.util.Scanner;
 
 public class Primos {

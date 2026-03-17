@@ -1,0 +1,12 @@
+npm install -g nodemon
+
+npm install ejs
+
+code .
+
+Para executar a aplicação a partir de agora, digite:
+nodemon app.js
+
+
+Para visualizar o projeto:
+Abrir o navegador e digitar localhost:8081
